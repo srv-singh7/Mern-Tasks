@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Registration Form</title>
+ <style>
+  table {
+   width: 100%;
+   border-collapse: collapse;
+  }
+  th, td {
+   border: 1px solid black;
+   padding: 10px;
+  }
+  th {
+   text-align: left;
+  }
+ </style>
+</head>
+<body>
+ <form action="action_page.php" method="post">
+  <table>
+   <tr>
+    <th>First Name</th>
+    <td><input type="text" name="firstname"></td>
+   </tr>
+   <tr>
+    <th>Last Name</th>
+    <td><input type="text" name="lastname"></td>
+   </tr>
+   <tr>
+    <th>Email</th>
+    <td><input type="email" name="email"></td>
+   </tr>
+   <tr>
+    <th>Password</th>
+    <td><input type="password" name="password"></td>
+   </tr>
+   <tr>
+    <th>Re-enter Password</th>
+    <td><input type="password" name="re_password"></td>
+   </tr>
+   <tr>
+    <th>Gender</th>
+    <td>
+     <input type="radio" name="gender" value="male"> Male
+     <input type="radio" name="gender" value="female"> Female
+    </td>
+   </tr>
+   <tr>
+    <th>Age</th>
+    <td><input type="number" name="age"></td>
+   </tr>
+   <tr>
+    <th>Phone Number</th>
+    <td><input type="tel" name="phone_number"></td>
+   </tr>
+   <tr>
+    <th>Address</th>
+    <td><input type="text" name="address"></td>
+   </tr>
+   <tr>
+    <th>State</th>
+    <td><input type="text" name="state"></td>
+   </tr>
+   <tr>
+    <th>Country</th>
+    <td>
+     <select name="country">
+      <option value="India">India</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="China">China</option>
+      <option value="Japan">Japan</option>
+     </select>
+    </td>
+   </tr>
+   <tr>
+    <th>Language Known</th>
+    <td>
+     <input type="radio" name="language" value="English"> English
+     <input type="radio" name="language" value="French"> French
+     <input type="radio" name="language" value="Spanish"> Spanish
+     <input type="radio" name="language" value="German"> German
+    </td>
+   </tr>
+   <tr>
+    <th>Declaration</th>
+    <td><input type="checkbox" name="declaration"> I agree to the terms and conditions</td>
+   </tr>
+   
+  </table>
+  <tr>
+    <center>
+    <th></th>
+    <td><input type="submit" value="Register"></td>
+    </center>
+   </tr>
+ </form>
+</body>
+</html>
